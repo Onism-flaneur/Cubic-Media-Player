@@ -78,27 +78,3 @@
 .box div span:nth-child(3) {
     transform: rotateX(90deg) translate3d(0, 0, 200px);
 }
-
-.customFileUpload {
-    display: inline-block;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #007BFF; /* Bootstrap Primary Color */
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-.customFileUpload:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-.customFileUpload input {
-    display: none; /* Hide the default file input */
-}
-
-.buttonText {
-    margin-left: 10px; /* Space between icon and text */
-}
