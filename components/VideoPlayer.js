@@ -1,7 +1,7 @@
 // components/VideoPlayer.js
-"use client";
+"use client"; // Ensure this component runs on the client
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './VideoPlayer.module.css';
 
 const VideoPlayer = () => {
@@ -17,13 +17,23 @@ const VideoPlayer = () => {
 
     return (
         <section className={styles.section}>
-            <label className={styles.customFileUpload}>
-                <input type="file" accept="video/*" onChange={handleFileChange} />
-                <span className={styles.buttonText}>Play video form your device</span>
-            </label>
+            <input type="file" accept="video/*" onChange={handleFileChange} className={styles.fileInput} />
             {videoSrc && (
-                <video src={videoSrc} autoPlay loop unmuted className={styles.backgroundVideo} />
+                <video src={videoSrc} autoPlay loop muted className={styles.backgroundVideo} />
             )}
+            <div className={styles.box}>
+                <div>
+                    <span>
+                        {videoSrc && <video src={videoSrc} autoPlay loop muted className={styles.innerVideo} />}
+                    </span>
+                    <span>
+                        {videoSrc && <video src={videoSrc} autoPlay loop muted className={styles.innerVideo} />}
+                    </span>
+                    <span>
+                        {videoSrc && <video src={videoSrc} autoPlay loop muted className={styles.innerVideo} />}
+                    </span>
+                </div>
+            </div>
         </section>
     );
 };
