@@ -1,0 +1,92 @@
+/* styles/globals.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/* components/VideoPlayer.module.css */
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('/MacBook Pro 14 - 1.svg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.fileInput {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+}
+
+.box {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+}
+
+.box div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.innerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0px);
+}
+
+.box div span:nth-child(1) {
+  transform: rotateX(0deg) translate3d(0, 0, 200px);
+}
+
+.box div span:nth-child(2) {
+  transform: rotateY(90deg) translate3d(0, 0, -200px);
+}
+
+.box div span:nth-child(2) video {
+  transform: rotateY(180deg);
+}
+
+.box div span:nth-child(3) {
+  transform: rotateX(90deg) translate3d(0, 0, 200px);
+}
