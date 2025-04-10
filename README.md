@@ -5,8 +5,8 @@ Cubic Media Player is a modern web application built with Next.js that allows us
 
 ## Features
 
--File Upload: Users can easily upload video files from their local devices.
--Responsive Design: The player is designed to be responsive, ensuring a great experience on both desktop and mobile devices.
+- File Upload: Users can easily upload video files from their local devices.
+- Responsive Design: The player is designed to be responsive, ensuring a great experience on both desktop and mobile devices.
 - Customizable UI: The "Choose File" button is styled for a modern look, enhancing the overall user interface.
 - Video Playback: Uploaded videos can be played automatically with options for looping and muting.
 
@@ -45,10 +45,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
